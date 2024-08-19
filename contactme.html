@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .line {
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        .it {
+            margin-left: 100px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-image: url(4k.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        #hen {
+            opacity: 0.5;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(205, 89, 228);
+            justify-content: center;
+            padding: 10px 10px 10px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=text].clicked {
+            color: aqua;
+        }
+
+        input[type="text"], input[type="textarea"] {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .line {
+                margin-right: 20px;
+                margin-left: 20px;
+                width: 100%;
+            }
+
+            .it {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .sub input[type="text"], input[type="textarea"] {
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            button {
+                padding: 10px 20px;
+            }
+
+            form {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            body {
+                background-size: contain;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            input[type="text"], input[type="textarea"] {
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            button {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Contact me</h1>
+    </center>
+    <br>
+    <hr>
+    <div class="it">
+        <h1>Hello Co-Pioneer</h1>
+        <p style="font-size: 25px; color: rgb(234, 255, 0);">
+            <br>If you need any help, would like to contact, or hire me,
+            <br>you can fill out the form below. I am eagerly waiting for your message.
+            <br>Thank you, have a nice day!
+        </p>
+    </div>
+
+    <center>
+        <form>
+            <div class="first">
+                <input class="line" type="text" placeholder="Your name..." style="height:50px; width:300px;" id="hen">
+                <input type="text" placeholder="Your email..." style="height:50px; width:300px;" id="hen"><br>
+                <br>
+            </div>
+            <div class="sub" style="margin-top: 50px;">
+                <input type="text" placeholder="Subject" style="height:70px;width:713px;" class="line" id="hen">
+            </div>
+            <br><br>
+            <div>
+                <input type="textarea" placeholder="Message" style="height:200px;width:713px;" id="hen">
+            </div>
+        </form>
+        <br><br><br>
+    </center>
+    <center><button style="border-radius:30%;">SEND MESSAGE</button></center>
+</body>
+
+</html>

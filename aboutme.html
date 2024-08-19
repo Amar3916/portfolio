@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+            height: 1000px;
+            width: 700px;
+            background-color: rgb(246, 227, 203);
+            border: 2px solid black;
+            flex-shrink: 0;
+        }
+
+        .dm {
+            position: absolute;
+            height: 520px;
+            width: 800px;
+            left: 500px;
+            border: 2px solid black;
+            justify-self: center;
+            align-self: center;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .im {
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+
+      
+        @media (max-width: 1200px) {
+            .dm {
+                left: 50px;
+                width: 90%;
+                flex-direction: column;
+            }
+
+            .d1 {
+                height: 800px;
+                width: 100%;
+            }
+
+            .dm div {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .d1 {
+                height: auto;
+            }
+
+            .dm {
+                position: relative;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dm div {
+                margin-left: 0;
+                width: 90%;
+            }
+
+            .dm img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .dm h1 {
+                font-size: 36px;
+            }
+
+            .dm h2 {
+                font-size: 24px;
+            }
+
+            .dm p {
+                font-size: 16px;
+            }
+
+            .dm button {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dm img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .dm h1 {
+                font-size: 28px;
+            }
+
+            .dm h2 {
+                font-size: 20px;
+            }
+
+            .dm p {
+                font-size: 14px;
+            }
+
+            .dm button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="display:flex">
+        <div class="d1"></div>
+        <div class="dm">
+            <div style="height: 520px;width: 400px;background-color: beige;">
+                <center><img src="indra.jpg" alt="me" height="200px" width="200px" class="im">
+                    <h2>AMAR</h2>
+                    <h2>portfolio</h2>
+                    <hr style="border: 2px solid rgb(46, 68, 213); width:60px">
+                    <h6 style="font-size: 20px;">SOFTWARE DEVELOPER</h6>
+                    <div><img src="logo.png" alt="logos" width="400px"></div>
+                </center>
+            </div>
+            <div style="margin-left: 20px;">
+                <h1 style="font-size: 55px;"><b>HELLO</b></h1>
+                <h2 style="margin-left: 20px;"><u>About ME</u></h2>
+                <button type="button" style="height:30px; width:100px; border-radius:40%;"><a style="text-decoration: none;" href="resume.html" target="center"><b>resume</b></a></button>
+                <button type="button" style="height:30px; width:100px; border-radius:40%;"><a style="text-decoration: none;" href="project.html" target="center" ><b>project</b></a></button>
+               
+                <p style="font-family: 'Courier New', Courier, monospace;">I am a software developer proficient in three coding languages:
+                    <br> Python, C, and C++. <br>I have gained valuable experience as a 
+                    <br>full stack developer at Omni Consultancy Services, where I<br>
+                    contributed to numerous web development projects. 
+                    <br>I am passionate about creating innovative solutions and leveraging technology to drive business growth.</p>
+            </div>
+        </div>
+        <div class="d2"></div>
+    </div>
+</body>
+</html>

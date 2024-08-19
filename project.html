@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bb {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin-left: 645px;
+            margin-top: 10px;
+            background-color: rgb(18, 18, 221);
+            position: absolute;
+        }
+
+        .b1, .b2, .b3 {
+            height: 300px;
+            width: 500px;
+            background-color: aliceblue;
+            margin-left: 400px;
+            display: flex;
+            box-shadow: -12px 11px 5px 0px #7D8484;
+            margin-bottom: 30px;
+        }
+
+        .he1 {
+            color: blue;
+            margin: 10px;
+        }
+
+        img {
+            position: absolute;
+            margin-left: 500px;
+        }
+
+        @media (max-width: 1200px) {
+            .b1, .b2, .b3 {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                flex-direction: column;
+            }
+
+            img {
+                position: static;
+                margin: 0 auto;
+                width: 80%;
+                height: auto;
+            }
+
+            .he1 {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .bb {
+                margin-left: auto;
+                margin-right: auto;
+                position: static;
+                display: block;
+            }
+
+            .b1, .b2, .b3 {
+                width: 95%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bb {
+                width: 15px;
+                height: 15px;
+            }
+
+            .b1, .b2, .b3 {
+                box-shadow: none;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .he1 h2 {
+                font-size: 18px;
+            }
+
+            .b1 div, .b2 div, .b3 div {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: blanchedalmond;">
+    <div class="bb"></div>
+    <center><h1>My Projects</h1></center>
+    <center>
+        <p>I am a software developer with expertise in Python, C, and C++.<br>
+           I have worked at a startup called Omni Consultancy Services, where I undertook numerous web development projects.<br>
+           As a full stack developer, I have a proven track record of delivering high-quality solutions to clients.</p>
+    </center>
+    <br><br><br>
+    <div class="b1">
+        <div class="he1">
+            <h2><strong>Web Development Project:<br> E-commerce Website</strong></h2>
+        </div>
+        <div style="margin: 20px;">
+            <center><b>Full Stack Developer</b></center>
+            <br><br>
+            <center>
+                Developed and deployed an e-commerce website using Python and Django.<br>
+                Led a team of developers and collaborated with the design team to ensure<br>
+                seamless integration of front-end and back-end functionalities.
+            </center>
+        </div>
+        <img src="spaceu.avif" alt="web developer" height="300px" width="300px">
+    </div>
+    <div class="b1">
+        <div class="he1">
+            <h2><strong>Custom CRM System<br> E-commerce Website</strong></h2>
+        </div>
+        <div style="margin: 20px;">
+            <center><b>Lead Developer</b></center>
+            <br><br>
+            <center>
+                Took charge of developing a custom CRM system using C++ for<br>
+                a client in the real estate industry. Managed the entire project lifecycle<br>
+                from requirement gathering to implementation and maintenance.
+            </center>
+        </div>
+        <img src="spaceu.avif" alt="web developer" height="300px" width="300px">
+    </div>
+    <div class="b1">
+        <div class="he1">
+            <h2><strong>Portfolio Website Redesign<br> E-commerce Website</strong></h2>
+        </div>
+        <div style="margin: 20px;">
+            <center><b>Project Lead</b></center>
+            <br><br>
+            <center>
+                Led the redesign of a portfolio website for a marketing agency using C.<br>
+                Implemented responsive design and optimized the site for performance,<br>
+                resulting in a significant improvement in user engagement.
+            </center>
+        </div>
+        <img src="spaceu.avif" alt="web developer" height="300px" width="300px">
+    </div>
+</body>
+</html>
